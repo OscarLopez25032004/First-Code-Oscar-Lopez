@@ -1,0 +1,42 @@
+* {
+    box-sizing:border-box;
+}
+body {
+    margin: 0;
+}
+.row:after {
+    display: flex;
+    height: 250px;
+    clear: both;
+}
+.column-2 {
+    width: 50%;
+    background-color: rgb(238, 195, 76);
+    float: left;
+}
+.column-4 {
+    width: 25%;
+    background-color: rgb(76, 214, 238);
+    float: left;
+}
+.column-3 {
+    width: 33.33%;
+    background-color: rgb(76, 238, 76);
+    float: left;
+}
+.estilos {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    height: 250px;
+}
+.img-git {
+    width: 50%;
+}
+@media screen and (max-width: 600px) {
+    .column-2 {
+        width: 100%;
+        color: white;
+    }
+}
