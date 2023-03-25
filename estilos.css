@@ -24,9 +24,13 @@ body {
     background-color: rgb(95, 150, 168);
     color: white;
 }
-.textorow3 {
-    margin-top: 30%;
+.textorow3-1 {
+    padding: 20px;
     font-size: 35px;
+}
+.textorow3-2 {
+    margin-top: -20px;
+    font-size: 26px;
 }
 /* indica el estilo del selector de bloque definidor de un contenedor genérico */
 div {
