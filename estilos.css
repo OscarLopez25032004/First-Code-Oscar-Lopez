@@ -4,6 +4,7 @@
 }
 body {
     margin: 0;
+    margin-bottom: 70px;
 }
 .row1 {
     display: flex;
@@ -24,6 +25,22 @@ body {
     background-color: rgb(95, 150, 168);
     color: white;
 }
+.row4 {
+    display: flex;
+    height: 530px;
+    flex-wrap: wrap;
+}
+.row4-1,
+.row4-2 {
+  flex: 1;
+}
+.row5 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
 .textorow3-1 {
     padding: 20px;
     font-size: 35px;
@@ -32,11 +49,23 @@ body {
     margin-top: -20px;
     font-size: 26px;
 }
-/* indica el estilo del selector de bloque definidor de un contenedor genérico */
-div {
-    font-size: 27px;
-    font-family: 'Golos Text', sans-serif;
-    text-decoration: none;
+.textorow4-1 {
+    font-size: 40px;
+}
+.textorow4-2 {
+    font-weight: normal;
+    font-size: 20px;
+}
+.textorow5-1 {
+    color: black;
+    font-size: 20px;
+    margin-left: 125px;
+}
+.textorow5-2 {
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    margin-left: 125px;
 }
 /* indica el estilo al encabezado 1 */
 .texto1 {
@@ -55,7 +84,7 @@ div {
     width: 100%;
     height: 100%;
 }
-.estilos {
+.heightimg {
     height: 250px;
 }
 .tituloproy {
@@ -66,53 +95,151 @@ div {
     max-width: 150%;
     max-height: 150%;
 }
+.column-1 {
+    width: 50%;
+}
+.column-2 {
+    width: 50%;
+}
+.backgroundcolor {
+    background-color: rgb(129, 129, 129);
+}
 .column-3 {
     width: 33.33%;
+}
+.column-4 {
+    width: 50%;
+}
+.column-5 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 .classtitle1 {
     margin-bottom: 10px;
 }
-/*
-.imgfondo {
-    background-image: url(./img/header.jpg);
-    max-width: 100%;
+.marginleft {
+    margin-left: 125px;
+}
+footer {
+	background-color: black;
+	text-align: center;
+	padding: 1px;
 	width: 100%;
-	height: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
 }
-*/
-/*
-.column-2 {
-    width: 50%;
-    background-color: rgb(238, 195, 76);
-    float: left;
+.textofooter {
+    font-weight: normal;
+    color: white;
+    font-size: 20px;
 }
-*/
-/*
-.column-4 {
-    width: 25%;
-    background-color: rgb(76, 214, 238);
-    float: left;
-}
-*/
-/*
-.column-3 {
-    width: 33.33%;
-    background-color: rgb(76, 238, 76);
-    float: left;
-}
-*/
-
-
-/*
-.img-git {
-    width: 50%;
-}
-*/
-/*
 @media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        margin-bottom: 325px;
+    }
+    .row1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-bottom: 350px;
+        margin-left: 20px;
+    }
+    /* indica la media query de la primera seccion */
+    .row2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 250px;
+        margin-left: 20px;
+        margin-bottom: 300px;
+    }
+    /* indica la media query de la segunda seccion */
+    .row3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    /* indica la media query de la tercera seccion */
+    .row4 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: -100px;
+        margin-bottom: 675px;
+    }
+    .row4-1, .row4-2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    /* indica la media query de la cuarta seccion */
+    .row5 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .column-1 {
+        width: 100%;
+    }
     .column-2 {
         width: 100%;
+    }
+    /* indica la media query de las filas 2, 3 y 4 (para que pasen a media 100% y no el 50%) */
+    .column-3 {
+        width: 50%;
+    }
+    /* indica la media query de la fila 5 (para que pasen a media 50% y no el 25%) */
+    .column-4 {
+        width: 50%;
+        flex-grow: 1;
+    }
+    .column-5 {
+        width: 50%;
+        flex-grow: 1;
+    }
+    .texto1 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        width: 65%;
+        text-align: center;
+    }
+    .heightimg {
+        height: 150px;
+        margin-bottom: 150px;
+    }
+    .img {
+        max-width: 150%;
+        max-height: 150%;
+    }
+    .textorow3-1 {
+        padding: 0px;
+        font-size: 30px;
+        margin-left: 150px;
+    }
+    .textorow3-2 {
+        font-size: 25px;
+        margin-left: 10%;
+    }
+    .columnmap {
+        margin-top: 450px;
+    }
+    .textorow5-1 {
+        color: black;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .textorow5-2 {
+        font-weight: normal;
+        font-size: 20px;
         color: white;
+        margin-left: 10px;
     }
 }
-*/
