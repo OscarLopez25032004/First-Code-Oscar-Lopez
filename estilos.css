@@ -1,76 +1,18 @@
+/* indican los estilos genéricos para toda la página web */
 * {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
+/* indica el estilo del body */
 body {
     margin: 0;
     margin-bottom: 65px;
 }
-.row1 {
-    display: flex;
-    flex-wrap: wrap;
+/* indica el estilo al id "imgenc" */
+#imgenc {
+    max-width: 100%;
     width: 100%;
-    height: 250px;
-    margin-top: 10px;
-    margin-bottom: 700px;
-    margin-left: 120px;
-}
-.row img {
-    width: 100%;
-    height: auto;
-    flex-basis: 33.33%;
-    box-sizing: border-box;
-    padding: 10px;
-} 
-.row2 {
-    display: flex;
-    height: 250px;
-    margin-left: 180px;
-    margin-bottom: 200px;
-}
-.row3 {
-    text-align: center;
-    height: 150px;
-    background-color: rgb(95, 150, 168);
-    color: white;
-}
-.row4 {
-    display: flex;
-    height: 530px;
-    flex-wrap: wrap;
-}
-.row4-1,
-.row4-2 {
-  flex: 1;
-}
-.row5 {
-    display: flex;
-    background-color: rgb(78, 78, 78);
-    color: white;
-}
-.textorow3-1 {
-    padding: 20px;
-    font-size: 35px;
-}
-.textorow3-2 {
-    margin-top: -20px;
-    font-size: 26px;
-}
-.textorow4-1 {
-    font-size: 40px;
-}
-.textorow4-2 {
-    font-weight: normal;
-    font-size: 20px;
-}
-.textorow5-1 {
-    color: black;
-    font-size: 20px;
-}
-.textorow5-2 {
-    font-weight: normal;
-    font-size: 20px;
-    color: white;
+    height: 100%;
 }
 /* indica el estilo al encabezado 1 */
 .texto1 {
@@ -83,54 +25,122 @@ body {
     width: 65%;
     text-align: center;
 }
-/* indica el estilo al id "imgenc" */
-#imgenc {
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-}
-.heightimg {
-    height: 250px;
-}
+/* indica el estilo del titulo "PROYECTO" */
 .tituloproy {
     text-align: center;
     font-size: 25px;
 }
+/* indica el contenido de la primera fila (las 6 imagenes) */
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 700px;
+    margin-left: 120px;
+}
+/* indica el estilo de la fila azul ("DANOS TU FEEDBACK") */
+.row3 {
+    text-align: center;
+    height: 150px;
+    background-color: rgb(95, 150, 168);
+    color: white;
+}
+/* indica el estilo de la fila del google maps */
+.row4 {
+    display: flex;
+    height: 530px;
+    flex-wrap: wrap;
+}
+/* indica el estilo de la columna de la izquierda de la cuarta fila (la del google maps) */
+.row4-1,
+.row4-2 {
+  flex: 1;
+}
+/* indica el estilo de la quinta o ultima fila */
+.row5 {
+    display: flex;
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+/* indica el estilo que se utiliza para que se vea en la misma fila todo el texto */
+.column {
+    flex: 1;
+    height: 150px;
+}
+/* indica el estilo de la fila del google maps (divide la fila en 2 columnas) */
+.column-2 {
+    width: 50%;
+}
+/* indica el estilo de la columna derecha de la quinta fila */
+.column-2-2 {
+    display: flex;
+}
+/* indica el estilo background-color para la quinta fila */
+.backgroundcolor {
+    background-color: rgb(129, 129, 129);
+}
+/* indica el estilo de las columnas de las imagenes de github */
+.column-3 {
+    width: 33.33%;
+}
+/* indica el estilo de las subcolumnas de la quinta */
+.column-4 {
+    flex-basis: 50%;
+    height: 100%;
+}
+/* indica el estilo del texto de la fila azul ("DANOS TU FEEDBACK") */
+.textorow3-1 {
+    padding: 20px;
+    font-size: 35px;
+}
+/* indica el estilo del texto de la fila azul ("DANOS TU FEEDBACK") */
+.textorow3-2 {
+    margin-top: -20px;
+    font-size: 26px;
+}
+/* indica el estilo de los titulos de la fila del google maps */
+.textorow4-1 {
+    font-size: 40px;
+}
+/* indica el estilo de los parrafos de la fila del google maps */
+.textorow4-2 {
+    font-weight: normal;
+    font-size: 20px;
+}
+/* indica el estilo de los titulo de la quinta fila */
+.textorow5-1 {
+    color: black;
+    font-size: 20px;
+    margin-left: 125px;
+}
+/* indica el estilo de los parrafos de la quinta fila */
+.textorow5-2 {
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+}
+/* indica el alto de las imagenes de github */
+.heightimg {
+    height: 250px;
+}
+/* indica el estilo de las imagenes de github de la primera fila */
 .img {
     max-width: 150%;
     max-height: 150%;
 }
+/* indica el estilo de las imagenes de github de la segunda fila */
 .img2 {
     max-width: 150%;
     max-height: 150%;
     margin-top: 250px;
 }
-.column {
-    flex: 1;
-    height: 150px;
-}
-.column-2 {
-    width: 50%;
-}
-.column-2-2 {
-    display: flex;
-}
-.backgroundcolor {
-    background-color: rgb(129, 129, 129);
-}
-.column-3 {
-    width: 33.33%;
-}
-.column-4 {
-    flex-basis: 50%;
-    height: 100%;
-}
-.classtitle1 {
-    margin-bottom: 10px;
-}
+/* indica el estilo margin-left utilizado en varias secciones de la web */
 .marginleft {
     margin-left: 125px;
 }
+/* indica el estilo del footer */
 footer {
 	background-color: black;
 	text-align: center;
@@ -140,31 +150,35 @@ footer {
 	bottom: 0;
 	left: 0;
 }
+/* indica el estilo del texto del footer */
 .textofooter {
     font-weight: normal;
     color: white;
     font-size: 20px;
 }
+/* indican las media queries */
 @media screen and (max-width: 600px) {
+    /* indica la media query del body */
     body {
         margin: 0;
         margin-bottom: 65px;
     }
-    .row1, .row2 {
+    /* indica la media query de la segunda fila (la de las imagenes de github) */
+    .row2 {
         flex-wrap: wrap;
         height: auto;
         flex-grow: 1;
         margin-top: 0px;
         margin-bottom: 0px;
-        margin-left: 0px;
+        margin-left: 20px;
     }
-    /* indica la media query de la segunda seccion */
+    /* indica la media query de la tercera fila */
     .row3 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
-    /* indica la media query de la tercera seccion */
+    /* indica la media query de la cuarta fila (la de google maps) */
     .row4 {
         display: flex;
         flex-wrap: wrap;
@@ -172,33 +186,33 @@ footer {
         margin-left: -100px;
         margin-bottom: 675px;
     }
+    /* indica la media query del las subcolumnas de la cuarta fila */
     .row4-1, .row4-2 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
-    /* indica la media query de la cuarta seccion */
+    /* indica la media query de la quinta fila */
     .row5 {
         flex-direction: column;
     }
+    /* indica la media query del primer texto de la quinta fila */
     .column-1 {
         width: 100%;
     }
+    /* indica la media query de la columna de la cuarta fila */
     .column-2 {
         width: 100%;
     }
-    /* indica la media query de las filas 2, 3 y 4 (para que pasen a media 100% y no el 50%) */
+    /* indica la medi query de las columnas de las imagenes de github */
     .column-3 {
         width: 50%;
       }
-    /* indica la media query de la fila 5 (para que pasen a media 50% y no el 25%) */
+    /* indica la media query de las subcolumnas de la columa derecha de la quinta fila */
     .column-4 {
         flex-basis: 50%;
     }
-    .column-5 {
-        width: 50%;
-        flex-grow: 1;
-    }
+    /* indica la media query del texto del encabezado (para que sea mas pequeña) */
     .texto1 {
         position: absolute;
         top: 20%;
@@ -209,37 +223,47 @@ footer {
         width: 65%;
         text-align: center;
     }
+    /* indica la media query de la altura de las imagenes de github */
     .heightimg {
         height: auto;
     }
+    /* indica la media query de las imagenes de github (las tres primeras) */
     .img {
         max-width: 90%;
         max-height: 90%;
     }
+    /* indica la media query de las imagenes de github (las tres segundas) */
     .img2 {
         max-width: 90%;
         max-height: 90%;
         margin-top: 0px;
     }
+    /* indica la media query de los titulos de la tercera fila */
     .textorow3-1 {
         padding: 0px;
         font-size: 30px;
         margin-left: 150px;
     }
+    /* indica la media query de los parrafos de la tercera fila */
     .textorow3-2 {
         font-size: 25px;
         margin-left: 10%;
     }
+    /* indica la media query de googlemaps */
     .columnmap {
         margin-top: 20px;
     }
+    /* indica la media query de los titulos de la quinta fila */
     .textorow5-1 {
         color: black;
         font-size: 20px;
+        margin-left: 25px;
     }
+    /* indica la media query de los parrafos de la quinta fila */
     .textorow5-2 {
         font-weight: normal;
         font-size: 20px;
         color: white;
+        margin-left: 25px;
     }
 }
