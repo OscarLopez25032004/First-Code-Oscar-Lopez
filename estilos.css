@@ -4,15 +4,24 @@
 }
 body {
     margin: 0;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
 }
 .row1 {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     height: 250px;
-    margin-top: 80px;
-    margin-bottom: 250px;
-    margin-left: 180px;
+    margin-top: 10px;
+    margin-bottom: 700px;
+    margin-left: 120px;
 }
+.row img {
+    width: 100%;
+    height: auto;
+    flex-basis: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+} 
 .row2 {
     display: flex;
     height: 250px;
@@ -36,8 +45,6 @@ body {
 }
 .row5 {
     display: flex;
-    flex-wrap: wrap;
-    height: 150px;
     background-color: rgb(78, 78, 78);
     color: white;
 }
@@ -59,13 +66,11 @@ body {
 .textorow5-1 {
     color: black;
     font-size: 20px;
-    margin-left: 125px;
 }
 .textorow5-2 {
     font-weight: normal;
     font-size: 20px;
     color: white;
-    margin-left: 125px;
 }
 /* indica el estilo al encabezado 1 */
 .texto1 {
@@ -95,11 +100,20 @@ body {
     max-width: 150%;
     max-height: 150%;
 }
-.column-1 {
-    width: 50%;
+.img2 {
+    max-width: 150%;
+    max-height: 150%;
+    margin-top: 250px;
+}
+.column {
+    flex: 1;
+    height: 150px;
 }
 .column-2 {
     width: 50%;
+}
+.column-2-2 {
+    display: flex;
 }
 .backgroundcolor {
     background-color: rgb(129, 129, 129);
@@ -108,12 +122,8 @@ body {
     width: 33.33%;
 }
 .column-4 {
-    width: 50%;
-}
-.column-5 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    flex-basis: 50%;
+    height: 100%;
 }
 .classtitle1 {
     margin-bottom: 10px;
@@ -138,24 +148,15 @@ footer {
 @media screen and (max-width: 600px) {
     body {
         margin: 0;
-        margin-bottom: 325px;
+        margin-bottom: 65px;
     }
-    .row1 {
-        display: flex;
+    .row1, .row2 {
         flex-wrap: wrap;
-        flex-direction: row;
-        margin-top: 10px;
-        margin-bottom: 350px;
-        margin-left: 20px;
-    }
-    /* indica la media query de la primera seccion */
-    .row2 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        height: 250px;
-        margin-left: 20px;
-        margin-bottom: 300px;
+        height: auto;
+        flex-grow: 1;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
     }
     /* indica la media query de la segunda seccion */
     .row3 {
@@ -178,9 +179,7 @@ footer {
     }
     /* indica la media query de la cuarta seccion */
     .row5 {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+        flex-direction: column;
     }
     .column-1 {
         width: 100%;
@@ -191,11 +190,10 @@ footer {
     /* indica la media query de las filas 2, 3 y 4 (para que pasen a media 100% y no el 50%) */
     .column-3 {
         width: 50%;
-    }
+      }
     /* indica la media query de la fila 5 (para que pasen a media 50% y no el 25%) */
     .column-4 {
-        width: 50%;
-        flex-grow: 1;
+        flex-basis: 50%;
     }
     .column-5 {
         width: 50%;
@@ -212,12 +210,16 @@ footer {
         text-align: center;
     }
     .heightimg {
-        height: 150px;
-        margin-bottom: 150px;
+        height: auto;
     }
     .img {
-        max-width: 150%;
-        max-height: 150%;
+        max-width: 90%;
+        max-height: 90%;
+    }
+    .img2 {
+        max-width: 90%;
+        max-height: 90%;
+        margin-top: 0px;
     }
     .textorow3-1 {
         padding: 0px;
@@ -229,17 +231,15 @@ footer {
         margin-left: 10%;
     }
     .columnmap {
-        margin-top: 450px;
+        margin-top: 20px;
     }
     .textorow5-1 {
         color: black;
         font-size: 20px;
-        margin-left: 10px;
     }
     .textorow5-2 {
         font-weight: normal;
         font-size: 20px;
         color: white;
-        margin-left: 10px;
     }
 }
