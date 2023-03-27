@@ -253,6 +253,11 @@ footer {
     .columnmap {
         margin-top: 20px;
     }
+    /* indica el estilo del mapa */
+    iframe {
+        margin-left: 105px;
+        width: 142%;
+    }
     /* indica la media query de los titulos de la quinta fila */
     .textorow5-1 {
         color: black;
